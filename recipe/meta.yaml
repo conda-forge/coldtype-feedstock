@@ -33,6 +33,10 @@ requirements:
     - python-bidi
     - requests
     - b3denv >=0.0.10
+    # from fonttools[ufo]
+    - fs
+    # from fonttools[unicode]
+    - unicodedata2
 
 test:
   imports:
