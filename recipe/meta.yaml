@@ -1,5 +1,5 @@
 {% set name = "coldtype" %}
-{% set version = "0.10.14" %}
+{% set version = "0.10.17" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/coldtype-{{ version }}.tar.gz
-  sha256: 32881c4fc4db0e90f4419700f3cbd41c866af6434aeadb81954db1cc710d3541
+  sha256: 66c760ab1d7c1d14495178bb74760142d87ecba8cfbe4b30969e3cb0f79eb537
 
 build:
   entry_points:
