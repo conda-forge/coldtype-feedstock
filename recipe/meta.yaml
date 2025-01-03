@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/coldtype-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/coldtype-{{ version }}.tar.gz
   sha256: 32881c4fc4db0e90f4419700f3cbd41c866af6434aeadb81954db1cc710d3541
 
 build:
@@ -14,14 +14,14 @@ build:
     - coldtype = coldtype.renderer:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - blackrenderer >=0.6.0
     - fonttools
     - fontpens
@@ -42,6 +42,7 @@ test:
     - coldtype --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/goodhertz/coldtype
