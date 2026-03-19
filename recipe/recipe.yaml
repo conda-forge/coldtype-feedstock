@@ -27,16 +27,18 @@ requirements:
     - pip
     - setuptools >=61.0
     - setuptools_scm >=8.0
+    - wheel
   run:
     - python >=${{ python_min }}
     - fontpens ==0.2.4
     - easing-functions ==1.0.4
-    - b3denv >=0.0.12
+    - b3denv >=0.0.22
     - coldtype-fontgoggles ==1.8.4.7
     - skia-pathops
     - defcon >=0.12.0
-    - freetype-py
     - uharfbuzz <0.47.0
+    - show-in-file-manager >=1.1.6
+    - fonttools >=4.60.2
 
 tests:
   - python:
