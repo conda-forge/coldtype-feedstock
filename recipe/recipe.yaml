@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: coldtype
-  version: "0.12.4"
+  version: "0.13.1"
   python_min: "3.11"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/coldtype-${{ version }}.tar.gz
-  sha256: d304e88dca19ddb9cd4f1208a52917134331190ae75292018c04010159757c94
+  sha256: 1876d295fd07b7031100fcb5ff1fbb9e5441fb740b6701aa1c2b27e96aab406c
 
 build:
   number: 0
